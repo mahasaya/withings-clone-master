@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withing-clone</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+        {
+            "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
+    }
+        }
+    </script>
+    <script  type="text/javascript" src="index.js"></script>
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+    <div class="parent-container">
+        
+        <!-- NAV-BAR -->
+        <nav class="row align-items-start nav-bar">
+
+            <!-- LOGO-CONTAINER -->
+            <div class="logo-container col-2">
+                <a>
+                    <img loading="lazy" style="width: 144px; height: 64px;" src="./Images/withings-logotype-black.svg"/>
+                </a>
+            </div>
+
+            <!-- MENU -->
+            <div class="row align-items-center col-8 menu align-self-center text-center"> 
+                <div class="col-1 position-relative">
+                    Store
+
+                    <div class="position-absolute align-items-start d-flex flex-column gap-2 px-3 py-3 drop-down">
+                        <span>All our products</span>
+                        <span>Refurbished products</span>
+                    </div>
+                </div>
+                <div class="col-1 position-relative">
+                    Scales 
+                    
+                    <div class="position-absolute d-flex align-items-start flex-column gap-2 px-3 py-3 drop-down">
+                        <span>Body Scan</span>
+                        <span>Body Comp</span>
+                        <span>Body Smart</span>
+                        <span>All scales</span>
+                    </div>
+                </div>
+                <div class="col-1 position-relative">
+                    Watches
+
+                    <div class="position-absolute d-flex flex-column align-items-start gap-2 px-3 py-3 drop-down">
+                        <span>ScanWatch Nova  <span class="badge">New</span></span>
+                        <span>ScanWatch Nova Brilliant  <span class="badge">New</span></span>
+                        <span>ScanWatch Light</span>
+                        <span>For her</span>
+                        <span>For him</span>
+                        <span>Wristbands</span>
+                        <span>All watches</span>
+                    </div>
+                </div>
+                <div class="col-2 position-relative">
+                    Other devices 
+                    <div class="position-absolute px-3 py-3 drop-down dropdown-grid" >
+                        <div class="d-flex flex-column gap-1 align-items-start">
+                            <h6>BP Monitors</h6>
+                            <span>BPM Connect</span>
+                            <span>BPM Core</span>
+                            <span>All BP monitors</span>
+                        </div>
+
+                        <div class="d-flex flex-column gap-1 align-items-start">
+                            <h6>Sleep trackers</h6>
+                            <span>Sleep Analyzer</span>
+                        </div>
+
+                        <div class="d-flex flex-column gap-1 align-items-start">
+                            <h6>MultiScan</h6>
+                            <span>Bearn O  <span class="badge">Soon</span></span>
+                        </div>
+
+                        <div class="d-flex flex-column gap-1 align-items-start">
+                            <h6>Urine lab</h6>
+                            <span>U-Scan Nutrio <span class="badge">New</span></span>
+                        </div>
+
+                        <div class="d-flex flex-column gap-1 align-items-start">
+                            <h6>Accessories</h6>
+                            <span>Wristbands</span>
+                            <span>Charging cable</span>
+                            <span>BPM Accessories</span>
+                            <span>All accessories</span>
+                        </div>
+
+                        <div class="d-flex flex-column gap-1 align-items-start">
+                            <h6>Concept product</h6>
+                            <span>OMNIAt</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-2 position-relative">
+                    Shop by need
+
+                    <div class="position-absolute px-3 py-3 drop-down dropdown-grid2 w-auto" >
+                        <div class="d-flex flex-column gap-1 align-items-start ">
+                            <h6>Heart</h6>
+                            <span>Perform an ECG</span>
+                            <span>Monitor your heart rate</span>
+                            <span>Manage hypertension</span>
+                        </div>
+
+                        <div class="d-flex flex-column gap-1 align-items-start ">
+                            <h6>Sleep</h6>
+                            <span>Improve your sleep</span>
+                            <span>Track oyur sleep</span>
+                            <span>Detect sleep apnea</span>
+                        </div>
+                        
+                        <div class="d-flex flex-column gap-1 align-items-start ">
+                            <h6>Body Composition</h6>
+                            <span>Track body fat</span>
+                            <span>Monitor your muscle mass</span>
+                        </div>
+
+                        <div class="d-flex flex-column gap-1 align-items-start ">
+                            <h6>Activity</h6>
+                            <span>Boost your physical activity</span>
+                            <span>Optimize your cardiac performance</span>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-1 position-relative">
+                    App
+                    
+                    <div class="position-absolute d-flex align-items-start flex-column gap-2 px-3 py-3 drop-down">
+                        <span>Withings App</span>
+                        <span>Withings App+</span>
+                        <span>Cardio Checks-Up</span>
+                    </div>
+                </div>
+                <div class="col-1">
+                    Support
+                </div>
+                <div class="col-3 d-flex gap-2 align-items-center">
+                    For professionals <img loading="lazy" width="15px" height="15px" src="Images/icons8-down-left-arrow-50.png"/>
+                </div>
+            </div>
+
+            <!-- CART-ACCOUNT -->
+            <div class="row align-items-end col align-self-center" >
+                <div class="col text-end">
+                    <img loading="lazy" width="25px" height="25px" src="Images/icons8-account-24.png"/>  
+                </div>
+                <div class="col-1 text-end">
+                    <img loading="lazy" width="23px" height="23px" src="Images/icons8-bag-50.png"/> 
+                </div>
+            </div>
+        </nav>
+
+        <!-- PARENT-BODY -->
+        <div class="parent-body d-flex flex-column gap-5 align-items-center">
+
+            <!-- PARENT-BODY-NAV-BAR -->
+            <div class=" d-flex justify-content-between body-nav-bar">
+                <div class=" d-flex justify-content-between flex-column rating-nav-container">
+                    <div class="d-flex align-items-center gap-2">
+                        <h6 class="txt_body txt_medium ">Body Scan</h6>
+                        <div class="d-flex align-items-center gap-1">
+                            <img loading="lazy" width="15px" height="15px" src="Images/icons8-star-30.png"/>
+                            <p class="txt_body txt_medium">4.2</p>
+                            <span class="">(393 reviews)</span>
+                        </div>
+                    </div>
+                    <span class="txt_medium"> € 399.95</span>
+                </div>
+
+                <div class="d-flex gap-5 align-items-center">
+                    <a class="txt_caption txt_book,">
+                        Tech specs
+                    </a>
+
+                    <button class="btn-buy-now">
+                        Buy now
+                    </button>
+                </div>
+            </div>
+
+            <!--SECTION 1 PRODUCT-INTRO-SECTION -->
+            <div class="product-vid-container d-flex flex-column gap-5 align-items-center">
+            <div class="d-flex flex-column gap-3 body-scan-text-container">
+                <h2 class="body-scan-text">
+                    Body Scan revolution
+                </h2>
+
+                <p>
+                    The incredible health checkup
+                </p>
+            </div>
+
+            <div class="vid-body-scan" >
+                <video playsinline autoplay muted preload="metadata">        
+                    <source src="Images/hero_prod_vid_en.webm" type="video/mp4">
+                </video>
+            </div>
+            </div>
+
+            <!-- SECTION-2-HEALTH-ANALYSIS-SECTION -->
+
+            <div class="d-flex health-analysis-heading-container align-items-center h-100  pb-2">
+                <div class="w-75 h-100">
+                    <h3 class="txt_subtitle ">
+                        A powerful clinical experience at home.
+                    </h3>
+
+                    <span class="txt_headline h-100">
+                        Revolutionary health analysis
+                    </span>
+                </div>
+
+                <p class="txt_subtitle w-75 h-auto">
+                    The scale that revolutionizes home health checkups. 
+                    A powerful, incredibly simple experience. Directly 
+                    from your home, in just 90 seconds, through a simple 
+                    weigh-in.
+                </p>
+            </div>
+
+            <div class="health-analysis-body-container d-flex gap-5 flex-column">
+                <div  class="position-relative health-analysis-vid-container">
+                        <video playsinline autoplay muted preload="metadata">        
+                            <source src="Images/subhero_video-en.mp4" type="video/mp4">
+                        </video>
+
+                    <div class="w-100 gap-4 d-flex justify-content-center  health-analysis-vid-text">
+                        <svg width="48" height="48" viewBox="0 0 120 120" fill="none" 
+                            xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" 
+                            clip-rule="evenodd" d="M60 120C93.1371 120 120 93.1371 120 60C120 
+                            26.8629 93.1371 0 60 0C26.8629 0 0 26.8629 0 60C0 93.1371 26.8629 120 60 
+                            120ZM47.25 84.6817L87.75 61.299C88.75 60.7217 88.75 59.2783 87.75 
+                            58.701L47.25 35.3183C46.25 34.7409 45 35.4626 45 36.6173L45 83.3827C45 
+                            84.5374 46.25 85.2591 47.25 84.6817Z" fill="white"></path>
+                        </svg>
+
+                        <h2 class="txt_book txt_title ">Scan your body in 90 seconds</h2>
+                    </div>
+                </div>
+
+                <div  class="health-analysis-grid-container  "></div>
+            </div>
+
+            <div class=" d-flex w-100 justify-content-center btn-container">
+                <button class="btn-buy-now">
+                    Buy now
+                </button>
+            </div>
+
+            <!-- 3-D MODEL  -->
+            <div data-child=".three-D-container-modal" class="three-D-container">
+                <div class=" d-flex  flex-column gap-4">
+                    <p class="txt_subtitle">
+                        Localized percentage of muscle and fat
+                    </p>
+
+                    <h1 class="txt_headline ">
+                        Build muscle mass faster
+                    </h1>
+                </div>
+
+                <div class="d-flex justify-content-center flex-column gap-4 ">
+                    <p class="txt_subtitle opacity_50">
+                        Muscle mass and body fat are essential parameters of your 
+                        health. Visualize your body in 3D and track your progress in 
+                        three key areas: legs, torso, and arms.
+                    </p>
+                    <button class="plus-icon-btn">
+                       <span>+</span> 
+                    </button>
+                    <div  class="three-D-container-modal custom-modal">
+                        <div class="modal-container">
+                            <div class="sub-modal-contaner">
+                                <div class="content-modal-contianer">
+                                    <div class="three-D-model">
+                                        
+                                    </div>
+                                    <div class="text-3d-container">
+                                       <p class="txt_caption txt_uppercase txt_medium opacity_60">
+                                            Localized muscle and fat percentage
+                                       </p>
+        
+                                       <p class="txt_subtitle_large margin_top_6 margin_bottom_4">
+                                            Experience your body in 3D: locate your 
+                                            muscular progress and follow specific trends 
+                                            in each area of the body.
+                                       </p>
+        
+                                       <div class="d-flex flex-column gap-2">
+                                            <p class="txt_body">
+                                                Body Scan uses multifrequency bioimpedance 
+                                                analysis, obtained via electrodes embedded 
+                                                in the scale's handle and platform.
+                                            </p>
+                                            <p class="txt_body">
+                                                This powerful scan provides day-by-day tracking
+                                                of body fat and muscle mass for each part of 
+                                                the body: arms, torso, and legs. This unique 
+                                                experience allows you to pinpoint muscular progress 
+                                                and monitor trends specific to each area, so you can 
+                                                adjust your efforts accordingly.
+                                            </p>
+                                            <p class="txt_body">
+                                                This revolutionary checkup is based on an extensive, 
+                                                detailed body composition database. So you can compare 
+                                                your data with that of other users to ensure you're on 
+                                                the right track.
+                                            </p>
+                                       </div>
+        
+        
+                                       <div>
+                                            <img/>
+                                       </div>
+        
+                                    </div>
+                                </div>
+    
+                                <div data-info=".three-D-container > :nth-child(2)" class="back-btn-modal">
+                                    <span>
+                                      Back
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
+            </div>
+
+            <!-- Grid-body-muscle-compositon -->
+            <div class=" d-flex flex-column gap-4 ">
+                <!-- Grid -->
+                <div class="muscle-mass-grid">
+                    <div  class="full-body-grid-container position-relative overflow-hidden  w-100 ">
+                        <div class="d-flex justify-content-center position-relative inset-0 h-100 w-100">
+                            <img loading="lazy" class="ninty-percent purple position-absolute " src="Images\purple-img.jpg"/>
+                            <img loading="lazy" class="ninty-percent green active position-absolute z-2" src="Images\green-body.jpg"/>
+                        </div>
+    
+                        <div class="limbs">
+                            <span class="txt_medium ">Arms</span>
+                            <span></span>
+                        </div>
+                      
+                        <div class="limbs">
+                            <span class="txt_medium">Torso</span>
+                            <span></span>
+                        </div>
+    
+                        <div class="limbs">
+                            <span class="txt_medium">Legs</span>
+                            <span></span>
+                        </div>
+    
+                    </div>
+                    
+                    <div style="background-color:#e7e4df ;  height: 95%; border-radius: 15px;"  class="position-relative overflow-hidden  w-100">
+                        <div  class="d-flex justify-content-center position-relative inset-0 h-100 w-100">
+                            <img loading="lazy" class="ninty-percent purple position-absolute" src="Images\purple-torso-img.jpg"/>
+                            <img loading="lazy" class="ninty-percent green active position-absolute z-1" src="Images\green-torso.jpg"/>
+                        </div>
+    
+                        <span class="top-corner-text">
+                            Torso · 24.3% 
+                        </span>
+    
+                        <div class="progress-bar-grid d-flex flex-column">
+                            <span class="txt_caption mb-3">
+                                Results are compared to Withings users like you.
+                            </span>
+                            <div class="d-flex gap-2 w-100 ">
+                                <p class="d-flex flex-column gap-2 flex-fill">
+                                    <span class="progress-bar green-bar light-green-one"></span>
+                                    <span class="progress-bar purple-bar hidden light-purple-one"></span>
+                                    <span class="txt_note ">Lowest</span>
+                                </p>
+                                <p class="d-flex flex-column gap-2 flex-fill">
+                                    <span class="progress-bar green-bar light-green-two"></span>
+                                    <span class="progress-bar purple-bar hidden light-purple-two"></span>
+                                    <span class="txt_note ">Low</span>
+                                </p>
+                                <p class="d-flex flex-column gap-2 flex-fill">
+                                    <span class="progress-bar green-bar light-green-three"></span>
+                                    <span class="progress-bar purple-bar hidden light-purple-three"></span>
+                                    <span class="txt_note ">Middle</span>
+                                </p>
+                                <p class="d-flex flex-column gap-2 flex-fill">
+                                    <span class="progress-bar green-bar light-green-four"></span>
+                                    <span class="progress-bar purple-bar hidden light-purple-four"></span>
+                                    <span class="txt_note ">High</span>
+                                </p>
+                                <p class="d-flex flex-column gap-2 flex-fill">
+                                    <span class="progress-bar green-bar light-green-five"></span>
+                                    <span class="progress-bar purple-bar hidden light-purple-five"></span>
+                                    <span class="txt_note ">Highest</span>
+                                </p>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div style=" height: 95%; gap: 10px; border-radius: 15px;"  class="d-flex flex-column overflow-hidden  w-100">
+                        <div class="w-100 position-relative ">
+                            <div style="background-color:#e7e4df ; border-radius: 15px;" class=" position-relative d-flex justify-content-center w-100">
+                                <img loading="lazy" class=" ninty-percent purple" src="Images\purple-arms.jpg"/>
+                                <img loading="lazy" class="position-absolute ninty-percent green active" src="Images\green-arm.jpg"/>
+                            </div>
+                            <span class="top-corner-text">
+                                Avg. Arms · 29.2%
+                            </span>
+                        </div>
+    
+    
+                        <div class="position-relative  w-100">
+                            <div style="background-color:#e7e4df ; border-radius: 15px;" class=" h-100 w-100 d-flex justify-content-center">
+                                <img loading="lazy" class=" ninty-percent purple" src="Images\purple-legs.jpg"/>
+                                <img loading="lazy" class="position-absolute ninty-percent green active" src="Images\green-leg.jpg"/>
+                            </div>
+                            <span class="top-corner-text">
+                                Avg. Legs · 28.7%
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- button -->
+                <div class="d-flex justify-content-center pb-3 grid-btn-container">
+                    <span class="txt_subtitle txt_book pb-4 px-4 muscle-btn">Muscle mass</span>
+                    <span class="txt_subtitle txt_book pb-4 px-4 fat-btn">Fat mass</span>
+                </div>
+
+                <div class=" d-flex w-100 justify-content-center btn-container">
+                    <button class="btn-buy-now">
+                        Buy now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Reach-golas-faster-container -->
+            <div data-child=".reach-goal-modal" class="reach-goal-faster">
+            <div class="sub-reach-goal-faster">
+                <div class=" d-flex  flex-column gap-4">
+                    <p class="txt_subtitle">
+                        Weight loss activation
+                    </p>
+
+                    <h1 class="txt_headline ">
+                        Reach your weight goals faster
+                    </h1>
+                </div>
+
+                <div class="d-flex justify-content-center flex-column gap-4">
+                    <p class="txt_subtitle opacity_50">
+                        Track your essential metabolic parameters: muscle mass, 
+                        body fat, visceral fat, and calories burned at rest.
+                    </p>
+                    <button class="plus-icon-btn">
+                        <span>+</span> 
+                    </button>
+                    <div   class="reach-goal-modal custom-modal">
+                        <div class="modal-container">
+                            <div class="sub-modal-contaner">
+                                <div class="content-modal-contianer">
+                                    <div class="lifestyle-e-container">
+                                        <img loading="lazy" src="Images\lifestyle-e.jpg"/>
+                                    </div>
+                                    <div class="text-3d-container">
+                                        <p class="txt_caption txt_uppercase txt_medium opacity_60">
+                                            Localized muscle and fat percentage
+                                        </p>
+        
+                                        <p class="txt_subtitle_large margin_top_6 margin_bottom_4">
+                                            Experience your body in 3D: locate your 
+                                            muscular progress and follow specific trends 
+                                            in each area of the body.
+                                        </p>
+        
+                                        <div class="d-flex flex-column gap-2">
+                                            <p class="txt_body">
+                                                Body Scan uses multifrequency bioimpedance 
+                                                analysis, obtained via electrodes embedded 
+                                                in the scale's handle and platform.
+                                            </p>
+                                            <p class="txt_body">
+                                                This powerful scan provides day-by-day tracking
+                                                of body fat and muscle mass for each part of 
+                                                the body: arms, torso, and legs. This unique 
+                                                experience allows you to pinpoint muscular progress 
+                                                and monitor trends specific to each area, so you can 
+                                                adjust your efforts accordingly.
+                                            </p>
+                                            <p class="txt_body">
+                                                This revolutionary checkup is based on an extensive, 
+                                                detailed body composition database. So you can compare 
+                                                your data with that of other users to ensure you're on 
+                                                the right track.
+                                            </p>
+                                        </div>
+        
+        
+                                        <div>
+                                            <img/>
+                                        </div>
+        
+                                    </div>
+                                </div>
+    
+                                <div data-info=".sub-reach-goal-faster > :nth-child(2)" class="back-btn-modal">
+                                    <span>
+                                        Back
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Black-container -->
+            <div class="black-container">
+                <div class="sub-black-container">
+                    <!-- Text-contianer -->
+                    <div class="d-flex flex-column gap-2">
+                        <span class="txt_subtitle">
+                            FDA Cleared
+                        </span>
+
+                        <h1 class="txt_headline en">
+                            Detect a cardiac anomaly
+                        </h1>
+                    </div>
+
+                    <!-- Image-container -->               
+                    <div class="Image-black-container">
+                        <div data-child=".cardio-modal" class="cardiovascular-container">
+                            <div>
+                            </div>
+                            
+                            <div>
+                                <p class="txt_body">
+                                    <span class="txt_medium">
+                                        Cardiovascular risk assessment.
+                                    </span>
+                                    &nbsp;
+                                    <span>
+                                        Analyze the condition of your arteries every day to monitor your vascular health.
+                                    </span>
+                                </p>
+                                <button class="plus-icon-btn white-plus">
+                                    <span>+</span> 
+                                    </button>
+                            </div>
+                            
+                            <div class="cardio-modal custom-modal">
+                                <div class="modal-container">
+                                    <div class="sub-modal-contaner bg-black">
+                                        <div class="content-modal-contianer cardio-black-container">
+                                            <div class="lifestyle-e-container">
+                                                <img loading="lazy" src="Images\body-scan-vascular-age.jpg"/>
+                                            </div>
+                                            <div class="text-3d-container">
+                                                <p class="txt_caption txt_uppercase txt_medium opacity_60">
+                                                    Localized muscle and fat percentage
+                                                </p>
+                
+                                                <p class="txt_subtitle_large margin_top_6 margin_bottom_4">
+                                                    Experience your body in 3D: locate your 
+                                                    muscular progress and follow specific trends 
+                                                    in each area of the body.
+                                                </p>
+                
+                                                <div class="d-flex flex-column gap-2">
+                                                    <p class="txt_body">
+                                                        Body Scan uses multifrequency bioimpedance 
+                                                        analysis, obtained via electrodes embedded 
+                                                        in the scale's handle and platform.
+                                                    </p>
+                                                    <p class="txt_body">
+                                                        This powerful scan provides day-by-day tracking
+                                                        of body fat and muscle mass for each part of 
+                                                        the body: arms, torso, and legs. This unique 
+                                                        experience allows you to pinpoint muscular progress 
+                                                        and monitor trends specific to each area, so you can 
+                                                        adjust your efforts accordingly.
+                                                    </p>
+                                                    <p class="txt_body">
+                                                        This revolutionary checkup is based on an extensive, 
+                                                        detailed body composition database. So you can compare 
+                                                        your data with that of other users to ensure you're on 
+                                                        the right track.
+                                                    </p>
+                                                </div>
+                
+                
+                                                <div>
+                                                    <img/>
+                                                </div>
+                
+                                            </div>
+                                        </div>
+            
+                                        <div data-info=".cardiovascular-container" class="back-btn-modal">
+                                            <span>
+                                                Back
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ecg">
+                            <div>
+                                <img loading="lazy" src="Images\Screenshot 2025-04-08 224320.png"/>
+                            </div>
+                            
+                            <div >
+                                <p class="txt_body">
+                                    <span class="txt_medium">
+                                        Cardiovascular risk assessment.
+                                    </span>
+                                    &nbsp;
+                                    <span>
+                                        Analyze the condition of your arteries every day to monitor your vascular health.
+                                    </span>
+                                </p>
+                                <button class="plus-icon-btn white-plus">
+                                    <span>+</span> 
+                                    </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Doctor-Info -->
+                    <div class="d-flex flex-column gap-3 doctor-container">
+
+                        <img loading="lazy" src="Images\doctor.jpg"/>
+
+
+                        <p class="txt_title"> 
+                            “The electrocardiogram and pulse wave velocity 
+                            are key measurements used by the medical community 
+                            to assess cardiovascular health and detect cardiac 
+                            anomalies.”
+                        </p>
+
+                        <p class="txt_subtitle margin_bottom_8">
+                            - Professor Stéphane Laurent, Georges Pompidou 
+                            European Hospital, Paris.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        
+        </div>
+
+        <!-- Sticky-Split-Layout -->
+        <div class="sticky-split-layout">
+            <!-- Sticky-div -->
+            <div class="sticky-container">
+                <div class="sticky-first-img">
+                    <div>
+                        <div class="first-img-container">
+                            <img loading="lazy" class="black-prod active-img" src="Images\body-scan-black-lb.webp"/> 
+                            <img loading="lazy" class="white-prod " src="Images\product-contaner-img-w.webp"/> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sticky-split-grid-img">
+                    <div>
+                        <div class="sticky-img-container">
+                            <div>
+                                <img loading="lazy" class="black-prod active-img" src="Images\sticky-grid-pic-1.webp"/>
+                                <img loading="lazy" class="white-prod " src="Images\product-container-img-white-1.webp"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="sticky-img-container">
+                            <div>
+                                <img loading="lazy" class="black-prod active-img" src="Images\sticky-grid-pic-2.webp"/>
+                                <img loading="lazy" class="white-prod " src="Images\product-container-img-white-2.webp"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="sticky-img-container">
+                            <div>
+                                <img loading="lazy" class="black-prod active-img" src="Images\sticky-grid-pic-3.webp"/>
+                                <img loading="lazy" class="white-prod " src="Images\product-container-img-white-3.webp"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="sticky-img-container">
+                            <div>
+                                <video class="black-prod active-img" autoplay muted loop playsinline>
+                                    <source src="Images\body-scan-sticky-vid.mp4"/>
+                                </video>
+                                <img loading="lazy" class="white-prod " src="Images\product-container-img-white-4.webp"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info-div -->
+            <div class="sticky-right-container">
+                <!-- Price-container -->
+                <div class="price-container">
+                    <div class="product-name-container">
+                        <div>
+                            <span class="tag-small tags-yellow">Best seller</span>
+                            <span class="tag-small tags-blue">Web exclusivity</span>
+                        </div>
+
+                        <p class="txt_subtitle txt_medium txt_neutral_grayscale_800">
+                            Body Scan - <span>Black</span>
+                        </p>
+
+                        <span class="txt_label txt_uppercase txt_caption tag-medium tags-blue">
+                            FSA-AND HSA-ELIGIBLE
+                        </span>
+
+                        <div class="star-container">
+                 
+                            <span>
+                                <svg width="16" height="16" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg" ><path d="M9.00001 14.2698L13.15 16.7798C13.91 17.2398 14.84 16.5598 14.64 15.6998L13.54 10.9798L17.21 7.79977C17.88 7.21977 17.52 6.11977 16.64 6.04977L11.81 5.63977L9.92001 1.17977C9.58001 0.369766 8.42001 0.369766 8.08001 1.17977L6.19001 5.62977L1.36001 6.03977C0.480012 6.10977 0.120012 7.20977 0.790012 7.78977L4.46001 10.9698L3.36001 15.6898C3.16001 16.5498 4.09001 17.2298 4.85001 16.7698L9.00001 14.2698Z" fill="rgb(var(--color-neutral-grayscale-800))" class="svelte-fmpyvu"></path></svg>
+                            </span>
+                            <span class="txt_caption txt_medium">4.2/5</span>
+                            <span class="txt_book opacity_60 txt_caption">(393 reviews)</span>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span>
+                            US$ 399.95
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Image-Contianer-to-do -->
+                <!-- <div>
+
+                    <img/>
+                </div> -->
+
+                <!--Product-Models-Contianer -->
+                <div class="product-model-container">
+                    <!-- Heading -->
+                    <div class="heading">
+                        <span class="txt_caption txt_uppercase ">
+                            MODELS
+                        </span>
+                    </div>
+
+                    <!-- Models -->
+                    <div class="products">
+                        <div data-info=".black-prod" class="black-white-contianer selected">
+                            <div class="">
+                                <img loading="lazy" src="Images\product-contaner-img-b.webp"/>
+                            </div>
+                            <p>
+                                Black
+                            </p>
+                        </div>
+
+                        <div data-info=".white-prod" class="black-white-contianer">
+                            <div>
+                                <img loading="lazy" src="Images\product-contaner-img-w.webp"/>
+                            </div>
+                            <p>
+                                White
+                            </p>
+                            <span>
+                                New color
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Subscription Dropdown -->
+                    <div data-info=".substription-dropdown-container" class="heading">
+                        <span class="txt_caption txt_uppercase ">
+                            Withings+ subscription
+                        </span>
+                        <svg data-open="false" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" 
+                            class=""><path d="M1 3L5 7L9 3" transform="translate(0 -2)" stroke="#666666" stroke-width="2"></path>
+                        </svg>
+                    </div>
+
+                    <!-- dropdown-content -->
+                    <div class="substription-dropdown-container">
+                        <div class="subscripton-content">
+                            <p class="txt_center txt_label txt_subtitle txt_medium ">
+                                Go beyond tracking
+                            </p>
+    
+                            <div>
+                                <img loading="lazy" src="Images\subscription-dropdown-img.png"/>
+                            </div>
+    
+                            <div>
+                                <div class="subscription-info-banner">
+                                    <div>
+                                        <img loading="lazy" src="Images\circle-dots-subdcription.svg"/>
+                                    </div>
+                                    <div>
+                                        <p class=" ">
+                                            Get a thorough health assessment. The Health 
+                                            Improvement Score is data-driven assessment 
+                                            that consolidates all your in-app metrics.
+                                        </p>
+                                    </div>
+                                </div>
+    
+                                <div class="subscription-info-banner">
+                                    <div>
+                                        <img loading="lazy" src="Images\youtube-logo.svg"/>
+                                    </div>
+                                    <div>
+                                        <p class=" ">
+                                            Transform your routines! Achieve your goals
+                                            at home with our tailored programs, and 
+                                            expert-curated content library.
+                                        </p>
+                                    </div>
+                                </div>
+    
+                                <div class="subscription-info-banner">
+                                    <div>
+                                        <img loading="lazy" src="Images\heart-logo.svg"/>
+                                    </div>
+                                    <div>
+                                        <p class=" ">
+                                            Receive a medical cardiovascular review with Cardio Check-Up*.
+                                            <span class="txt_caption ">*Compatible with Withings devices equipped with ECG capabilities.</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div> 
+
+                        <!-- Radio-banner -->
+                        <div class="radio-subscription-container">
+                            <div class="active subscription-options">
+                                <div class="radio filterd">
+                                    <div>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    No Withings+ subscription
+                                </div>
+                            </div>
+                            <div class="subscription-options"> 
+                                <div class="radio">
+                                    <div>
+
+                                    </div>
+                                </div>
+                                <div class="radio-text">
+                                    <p class="txt_body txt_medium health_plus txt_caption">
+                                        With Withings+ monthly subscription
+                                    </p>
+                                    <p class="txt_body">
+                                        3 months free, then US$ 9.95/month
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="subscription-options">
+                                <div class="radio">
+                                    <div>
+
+                                    </div>
+                                </div>
+                                <div class="radio-text">
+                                    <p class="txt_body txt_medium health_plus txt_caption">
+                                        With Withings+ yearly subscription
+                                    </p>
+                                    <p class="txt_body ">
+                                        3 months free, then US$ 99.5/year
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- BUTTON-CONTAINER-BUY -->
+                    <div class="green-ball">
+                        <span >
+
+                        </span>
+                        <span>
+                            IN STOCK
+                        </span>
+                    </div>
+
+                    <div class="btn-buy-container">
+                        <button>
+                            Add to cart
+                        </button>
+                    </div>
+
+                    <!-- Icons-div -->
+                    <div class="icons-container">
+                        <div>
+                            <img loading="lazy" src="Images\bus.svg"/>
+                            <p>
+                                Free shipping
+                            </p>
+                        </div>
+
+                        <div>
+                            <img loading="lazy" src="Images\calender.svg"/>
+                            <p>
+                                30-day trial
+                            </p>
+                        </div>
+
+                        <div>
+                            <img loading="lazy" src="Images\medal.svg"/>
+                            <p>
+                                2-year warranty
+                            </p>
+                        </div>
+
+                        <div>
+                            <img loading="lazy" src="Images\lock.svg"/>
+                            <p>
+                                Secure payment
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Info-Drop-Down -->
+                    <div>
+                        <div class="info-drop-down">
+                            <div>
+                                <span class="txt_caption txt_uppercase ">
+                                    Features
+                                </span>
+                                <svg data-open="false" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" 
+                                    class=""><path d="M1 3L5 7L9 3" transform="translate(0 -2)" stroke="#666666" stroke-width="2"></path>
+                                </svg>
+                            </div>
+
+                            <div class="features">
+                                <p class="tag-medium txt_caption tags-black ">
+                                    Compatible with iOS & Android
+                                </p>
+
+                                <div class="features-dropdown">
+
+                                    <div>
+                                        <div>
+                                            <img loading="lazy" src="Images\heart-logo.svg"/>
+                                        </div>
+    
+                                        <div>
+                                            <p class=" txt_medium txt_neutral_grayscale_800">
+                                                Precise weight measurements
+                                            </p>
+                                            <p>
+                                                Consistent and precise weight measurements (0.1lbs)
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div>
+                                            <img loading="lazy" src="Images\heart-logo.svg"/>
+                                        </div>
+    
+                                        <div>
+                                            <p class=" txt_medium txt_neutral_grayscale_800">
+                                                Segmental body composition
+                                            </p>
+                                            <p >
+                                                Ultra precise measurements of your body 
+                                                composition plus fat and muscle mass for 
+                                                each body part independently
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div>
+                                            <img loading="lazy" src="Images\heart-logo.svg"/>
+                                        </div>
+    
+                                        <div>
+                                            <p class=" txt_medium txt_neutral_grayscale_800">
+                                                Metabolic assessment
+                                            </p>
+                                            <p >
+                                                Visceral Fat Index, and BMR (Basal Metabolic Rate)
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div>
+                                            <img loading="lazy" src="Images\heart-logo.svg"/>
+                                        </div>
+    
+                                        <div>
+                                            <p class=" txt_medium txt_neutral_grayscale_800">
+                                                Heart health
+                                            </p>
+                                            <p>
+                                                Indication of your cardiovascular 
+                                                health via Vascular Age and standing heart rate
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div>
+                                            <img loading="lazy" src="Images\heart-logo.svg"/>
+                                        </div>
+    
+                                        <div>
+                                            <p class=" txt_medium txt_neutral_grayscale_800">
+                                                Withings Scan Monitor 2.0
+                                            </p>
+                                            <p>
+                                                The 6-Lead Electrocardiogram (ECG) can detect 
+                                                AFib, the most common cardiac rhythm disturbance; 
+                                                a heart arrhythmia that can cause stroke and 
+                                                heart failure
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div>
+                                            <img loading="lazy" src="Images\heart-logo.svg"/>
+                                        </div>
+    
+                                        <div>
+                                            <p class=" txt_medium txt_neutral_grayscale_800">
+                                                Electrodermal assessment
+                                            </p>
+                                            <p>
+                                                Evaluate your sweat glands response to an 
+                                                electrical stimulus and unlock your EDA score
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div>
+                                            <img loading="lazy" src="Images\heart-logo.svg"/>
+                                        </div>
+    
+                                        <div>
+                                            <p class=" txt_medium txt_neutral_grayscale_800">
+                                                Daily weather forecast
+                                            </p>
+                                            <p>
+                                                Step on your scale to enjoy a localized 
+                                                weather report as well as an air quality 
+                                                analysis
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-drop-down">
+                            <div>
+                                <span class="txt_caption txt_uppercase ">
+                                   Technical specification
+                                </span>
+                                <svg data-open="false" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" 
+                                    class=""><path d="M1 3L5 7L9 3" transform="translate(0 -2)" stroke="#666666" stroke-width="2"></path>
+                                </svg>
+                            </div>
+
+                            <div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="info-drop-down">
+                            <div>
+                                <span class="txt_caption txt_uppercase ">
+                                    In the box
+                                </span>
+                                <svg data-open="false" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" 
+                                    class=""><path d="M1 3L5 7L9 3" transform="translate(0 -2)" stroke="#666666" stroke-width="2"></path>
+                                </svg>
+                            </div>
+
+                            <div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+        <!-- Review-Rating -->
+        <div class="review-parent-container">
+
+            <div class="review-summary-container">
+
+                <div class="review-summary">
+                    <p class="ratings-avg ">
+                        
+                    </p>
+
+                    <div class="review-star-container">
+                        <div class="star-avg">
+                            <span>
+                                <svg width="16" height="16" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg" ><path d="M9.00001 14.2698L13.15 16.7798C13.91 17.2398 14.84 16.5598 14.64 15.6998L13.54 10.9798L17.21 7.79977C17.88 7.21977 17.52 6.11977 16.64 6.04977L11.81 5.63977L9.92001 1.17977C9.58001 0.369766 8.42001 0.369766 8.08001 1.17977L6.19001 5.62977L1.36001 6.03977C0.480012 6.10977 0.120012 7.20977 0.790012 7.78977L4.46001 10.9698L3.36001 15.6898C3.16001 16.5498 4.09001 17.2298 4.85001 16.7698L9.00001 14.2698Z" fill="rgb(var(--color-neutral-grayscale-800))" class="svelte-fmpyvu"></path></svg>
+                            </span>
+                            <span>
+                                <svg width="16" height="16" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg" ><path d="M9.00001 14.2698L13.15 16.7798C13.91 17.2398 14.84 16.5598 14.64 15.6998L13.54 10.9798L17.21 7.79977C17.88 7.21977 17.52 6.11977 16.64 6.04977L11.81 5.63977L9.92001 1.17977C9.58001 0.369766 8.42001 0.369766 8.08001 1.17977L6.19001 5.62977L1.36001 6.03977C0.480012 6.10977 0.120012 7.20977 0.790012 7.78977L4.46001 10.9698L3.36001 15.6898C3.16001 16.5498 4.09001 17.2298 4.85001 16.7698L9.00001 14.2698Z" fill="rgb(var(--color-neutral-grayscale-800))" class="svelte-fmpyvu"></path></svg>
+                            </span>
+                            <span>
+                                <svg width="16" height="16" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg" ><path d="M9.00001 14.2698L13.15 16.7798C13.91 17.2398 14.84 16.5598 14.64 15.6998L13.54 10.9798L17.21 7.79977C17.88 7.21977 17.52 6.11977 16.64 6.04977L11.81 5.63977L9.92001 1.17977C9.58001 0.369766 8.42001 0.369766 8.08001 1.17977L6.19001 5.62977L1.36001 6.03977C0.480012 6.10977 0.120012 7.20977 0.790012 7.78977L4.46001 10.9698L3.36001 15.6898C3.16001 16.5498 4.09001 17.2298 4.85001 16.7698L9.00001 14.2698Z" fill="rgb(var(--color-neutral-grayscale-800))" class="svelte-fmpyvu"></path></svg>
+                            </span>
+                            <span>
+                                <svg width="16" height="16" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg" ><path d="M9.00001 14.2698L13.15 16.7798C13.91 17.2398 14.84 16.5598 14.64 15.6998L13.54 10.9798L17.21 7.79977C17.88 7.21977 17.52 6.11977 16.64 6.04977L11.81 5.63977L9.92001 1.17977C9.58001 0.369766 8.42001 0.369766 8.08001 1.17977L6.19001 5.62977L1.36001 6.03977C0.480012 6.10977 0.120012 7.20977 0.790012 7.78977L4.46001 10.9698L3.36001 15.6898C3.16001 16.5498 4.09001 17.2298 4.85001 16.7698L9.00001 14.2698Z" fill="rgb(var(--color-neutral-grayscale-800))" class="svelte-fmpyvu"></path></svg>
+                            </span>
+                        </div>
+                        <p class="avg-review">
+                            Based on <span></span> reviews
+                        </p>
+                    </div>
+                    
+                    <p>
+                        <span class="check-info">&#10003;</span> 78% of respondents would recommend this product
+                    </p>
+                </div>
+                
+                <div class="review-info-container">
+                    <p>
+                        <span class="check-info">i</span>  How do we collect reviews ?
+                    </p>
+                    <p>
+                        Some of the reviews are translated automatically
+                    </p>
+                </div>
+            </div>
+
+            <!-- Review-stars-container -->
+            <div class="reviews-stars-container">
+
+                <div class="filter-options-container">
+
+                    <div>
+                        <div class="sort-by-container">
+                            <p>Sort by</p>
+                            <div class=" sort">
+                                <div class=" highest-rated radio filterd ">
+                                    <div>
+                                    </div>
+                                </div>
+                                <p>Highest rated</p>
+                            </div>
+    
+                            <div class=" sort">
+                                <div class="most-recent radio">
+                                    <div>
+                                    </div>
+                                </div>
+                                <p>Most recent</p>
+                            </div>
+    
+                            <div class=" sort">
+                                <div class="Lowest-rated radio">
+                                    <div>
+                                    </div>
+                                </div>
+                                <p>Lowest rated</p>
+                            </div>
+                        </div>
+    
+                        <div class="filer-by-rating-container">
+                            <p>
+                                Filter by rating
+                            </p>
+    
+                            <div class="all stars ">
+                                <div data-info= "all" class="square-radio filterd">
+                                    <div>
+                                        &#10003;
+                                    </div>
+                                </div>
+                                <span>
+                                    All
+                                </span>
+                                <div class="bar">
+    
+                                </div>
+                            </div>
+    
+                            <div class="five-stars stars">
+                                <div data-info= 5 class="square-radio">
+                                    <div>
+                                        &#10003;
+                                    </div>
+                                </div>
+                                <span>
+                                    5 stars
+                                </span>
+                                <div class="bar">
+    
+                                </div>
+                            </div>
+    
+                            <div class="four-stars stars">
+                                <div data-info= 4 class="square-radio filterd">
+                                    <div>
+                                        &#10003;
+                                    </div>
+                                </div>
+                                <span>
+                                    4 stars
+                                </span>
+                                <div class="bar">
+    
+                                </div>
+                            </div>
+    
+                            <div class="three-stars stars">
+                                <div data-info= 3 class="square-radio">
+                                    <div>
+                                        &#10003;
+                                    </div>
+                                </div>
+                                <span>
+                                    3 stars
+                                </span>
+                                <div class="bar">
+    
+                                </div>
+                            </div>
+    
+                            <div class="two-stars stars">
+                                <div data-info= 2 class="square-radio">
+                                    <div>
+                                        &#10003;
+                                    </div>
+                                </div>
+                                <span>
+                                    2 stars
+                                </span>
+                                <div class="bar">
+    
+                                </div>
+                            </div>
+    
+                            <div class="one-stars stars">
+                                <div data-info= 1 class="square-radio">
+                                    <div>
+                                        &#10003;
+                                    </div>
+                                </div>
+                                <span>
+                                    1 stars
+                                </span>
+                                <div class="bar">
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="filtered-results-container">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Drop-down-product-swap -->
+        <div class="drop-down-container">
+            <h2>
+                Which Withings scale is right for you?
+            </h2>
+            
+            <div>
+            </div>
+        </div>
+
+        <!-- SLIDER-CONTAINER -->
+        <div class="slider-container">
+            <div class="slider-text">
+                <p>Adapted to individual health needs</p>
+                <p>Their lives changed with Body Scan.</p>
+            </div>
+            <div class="slider">
+
+            </div>
+            
+            <div class="button-slider-container">
+                <div>
+                    <svg class="symbol" xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 14 14"><polygon points="8 12 9.75 11 7 7 9.75 3 8 2 4 6.92 4 7 4 7.08 8 12">
+                        </polygon>
+                    </svg>
+                </div>
+                <div>
+                    <svg class="symbol" xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 11 14"><polygon points="6 2 4.25 3 7 7 4.25 11 6 12 10 7.08 10 7 10 6.92 6 2">
+                        </polygon>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
