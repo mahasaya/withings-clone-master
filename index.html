@@ -6,19 +6,28 @@
     <title>Withing-clone</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script type="importmap">
+    <link rel="icon" href="Images/favicon-32x32.png" type="image/png">
+    <!-- <script type="importmap">
         {
             "imports": {
       "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
       "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
     }
         }
-    </script>
+    </script> -->
     <script  type="text/javascript" src="index.js"></script>
     <script type="module" src="main.js"></script>
 </head>
 <body>
     <div class="parent-container">
+
+        <!-- hamburger-menu -->
+        <div class="hamburger-menu-container hidden">
+            <div>
+                <div class="menu-ham-container"> 
+                </div>
+            </div>
+        </div>
         
         <!-- NAV-BAR -->
         <nav class="row align-items-start nav-bar">
@@ -31,7 +40,8 @@
             </div>
 
             <!-- MENU -->
-            <div class="row align-items-center col-8 menu align-self-center text-center"> 
+            <!-- normal menu -->
+            <div class="row align-items-center col-8 menu align-self-center text-center hidden"> 
                 <div class="col-1 position-relative">
                     Store
 
@@ -153,13 +163,19 @@
                 </div>
             </div>
 
+
             <!-- CART-ACCOUNT -->
-            <div class="row align-items-end col align-self-center" >
+            <div class="row cart-container align-items-end col align-self-center" >
                 <div class="col text-end">
                     <img loading="lazy" width="25px" height="25px" src="Images/icons8-account-24.png"/>  
                 </div>
                 <div class="col-1 text-end">
                     <img loading="lazy" width="23px" height="23px" src="Images/icons8-bag-50.png"/> 
+                </div>
+                <div class="hamburger-menu-btn col-1 text-end ">
+                    <div class="ham-line"></div>
+                    <div class="ham-line"></div>
+                    <div class="ham-line"></div>
                 </div>
             </div>
         </nav>
@@ -170,7 +186,7 @@
             <!-- PARENT-BODY-NAV-BAR -->
             <div class=" d-flex justify-content-between body-nav-bar">
                 <div class=" d-flex justify-content-between flex-column rating-nav-container">
-                    <div class="d-flex align-items-center gap-2">
+                    <div class="d-flex gap-2">
                         <h6 class="txt_body txt_medium ">Body Scan</h6>
                         <div class="d-flex align-items-center gap-1">
                             <img loading="lazy" width="15px" height="15px" src="Images/icons8-star-30.png"/>
@@ -213,8 +229,8 @@
 
             <!-- SECTION-2-HEALTH-ANALYSIS-SECTION -->
 
-            <div class="d-flex health-analysis-heading-container align-items-center h-100  pb-2">
-                <div class="w-75 h-100">
+            <div class="d-flex health-analysis-heading-container h-100  pb-2">
+                <div class=" h-100">
                     <h3 class="txt_subtitle ">
                         A powerful clinical experience at home.
                     </h3>
@@ -224,7 +240,7 @@
                     </span>
                 </div>
 
-                <p class="txt_subtitle w-75 h-auto">
+                <p class="txt_subtitle h-auto">
                     The scale that revolutionizes home health checkups. 
                     A powerful, incredibly simple experience. Directly 
                     from your home, in just 90 seconds, through a simple 
@@ -248,7 +264,7 @@
                             84.5374 46.25 85.2591 47.25 84.6817Z" fill="white"></path>
                         </svg>
 
-                        <h2 class="txt_book txt_title ">Scan your body in 90 seconds</h2>
+                        <h2 class="txt_book txt_title text-center">Scan your body in 90 seconds</h2>
                     </div>
                 </div>
 
@@ -353,17 +369,17 @@
                             <img loading="lazy" class="ninty-percent green active position-absolute z-2" src="Images\green-body.jpg"/>
                         </div>
     
-                        <div class="limbs">
+                        <div class="limbs arm">
                             <span class="txt_medium ">Arms</span>
                             <span></span>
                         </div>
                       
-                        <div class="limbs">
+                        <div class="limbs torso">
                             <span class="txt_medium">Torso</span>
                             <span></span>
                         </div>
     
-                        <div class="limbs">
+                        <div class="limbs leg">
                             <span class="txt_medium">Legs</span>
                             <span></span>
                         </div>
@@ -371,14 +387,34 @@
                     </div>
                     
                     <div style="background-color:#e7e4df ;  height: 95%; border-radius: 15px;"  class="position-relative overflow-hidden  w-100">
-                        <div  class="d-flex justify-content-center position-relative inset-0 h-100 w-100">
+                        <div  class="d-flex justify-content-center position-relative inset-0 h-100 w-100 mobile-muscle-mass-hide">
                             <img loading="lazy" class="ninty-percent purple position-absolute" src="Images\purple-torso-img.jpg"/>
                             <img loading="lazy" class="ninty-percent green active position-absolute z-1" src="Images\green-torso.jpg"/>
                         </div>
     
-                        <span class="top-corner-text">
+                        <span class="top-corner-text mobile-muscle-mass-hide">
                             Torso · 24.3% 
                         </span>
+
+                        <div class="d-flex justify-content-center position-relative inset-0 h-100 w-100 mobile-muscle-mass-show hidden">
+                            <img loading="lazy" class="ninty-percent purple position-absolute " src="Images\purple-img.jpg"/>
+                            <img loading="lazy" class="ninty-percent green active position-absolute z-2" src="Images\green-body.jpg"/>
+                        </div>
+    
+                        <div class="limbs mobile-muscle-mass-show hidden arm">
+                            <span class="txt_medium ">Arms</span>
+                            <span></span>
+                        </div>
+                      
+                        <div class="limbs mobile-muscle-mass-show hidden torso ">
+                            <span class="txt_medium">Torso</span>
+                            <span></span>
+                        </div>
+    
+                        <div class="limbs mobile-muscle-mass-show hidden leg">
+                            <span class="txt_medium">Legs</span>
+                            <span></span>
+                        </div>
     
                         <div class="progress-bar-grid d-flex flex-column">
                             <span class="txt_caption mb-3">
@@ -415,7 +451,7 @@
                         </div>
                     </div>
     
-                    <div style=" height: 95%; gap: 10px; border-radius: 15px;"  class="d-flex flex-column overflow-hidden  w-100">
+                    <div style=" height: 95%; gap: 10px; border-radius: 15px;"  class="d-flex flex-column overflow-hidden  w-100 ">
                         <div class="w-100 position-relative ">
                             <div style="background-color:#e7e4df ; border-radius: 15px;" class=" position-relative d-flex justify-content-center w-100">
                                 <img loading="lazy" class=" ninty-percent purple" src="Images\purple-arms.jpg"/>
@@ -761,10 +797,10 @@
                 </div>
 
                 <!-- Image-Contianer-to-do -->
-                <!-- <div>
-
-                    <img/>
-                </div> -->
+                <div class="first-img-container second-white-black-img hidden">
+                    <img loading="lazy" class="black-prod active-img" src="Images\body-scan-black-lb.webp"> 
+                    <img loading="lazy" class="white-prod " src="Images\product-contaner-img-w.webp"> 
+                </div>
 
                 <!--Product-Models-Contianer -->
                 <div class="product-model-container">
