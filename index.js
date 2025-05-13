@@ -682,6 +682,11 @@ const swapData = [
                 secondChild.removeClass("bounce");
             }, 500); 
         })
+
+        $(".health-analysis-vid-container").on("click", function(event){
+            event.stopPropagation();
+            showModel();
+        })
         
         $('.sub-reach-goal-faster > :nth-child(2)').on("click","p, button",function(event){
 
@@ -771,18 +776,28 @@ const swapData = [
             $(`${images}`).addClass("active-img")
         });      
 
-        $('.stars').on("click",function(){
-            $(this).children(":nth-child(1)").toggleClass("filterd");
-
-            let star =[]
-            $(".stars").find(".filterd").each(function (){
-                star.push($(this).data("info"))
-           })
-
-           let $filtered = $('.sort-by-container').find(".filterd");
-           let target = $filtered.length ? $filtered.attr("class") : null;
-           sortReview(target,star)
-        })
+        $('.stars').on("click", function () {
+            let $child = $(this).children(":nth-child(1)");
+            let isAll = $child.data("info") === "all";
+            
+            if (isAll) {
+                $(".square-radio").not('[data-info="all"]').removeClass("filterd");
+                $child.addClass("filterd");
+            } else {
+                $('.square-radio[data-info="all"]').removeClass("filterd");
+                $child.addClass("filterd");
+            }
+            let star = [];
+            $(".stars").find(".filterd").each(function () {
+                star.push($(this).data("info"));
+            });          
+        
+            let $filtered = $('.sort-by-container').find(".filterd");
+            let target = $filtered.length ? $filtered.attr("class") : null;
+        
+            sortReview(target, star);
+        });
+        
         
         $(".sort").on("click",function(){
 
@@ -862,9 +877,10 @@ const swapData = [
         sliderData.forEach((data, index)=>{
             let margin =" "
             if(index===0){
-                margin = "margin-left:50px"
+                margin ="margin-left:5%"
+                
             }else if(index===(sliderData.length-1)){
-                margin ="margin-right:50px"
+                margin ="margin-right:5%"
             }
             $(".slider").append(
                 `
@@ -1013,7 +1029,7 @@ const swapData = [
                 $firstChild.removeClass("slide-down-ham-animation");
                 $("body").css("overflow-y","scroll")
                 $(".options-container").remove()
-                $(this).remove()
+               
                 $(".subHeading-container-menu-ham").remove()
                 $(".menu-div").removeClass("hidden")
                 setTimeout(() => {
@@ -1168,15 +1184,14 @@ const swapData = [
             if (screenWidth <= 1199) {
                 $(".menu").addClass("hidden");
                 $(".hamburger-menu-btn").removeClass("hidden");
-                $(".sub-modal-contaner").css({
-                    "width":"60%"
-                })
+                $(".sub-modal-contaner").css("min-width", "60%");
+
             } else {
                 $(".menu").removeClass("hidden");
                 $(".hamburger-menu-btn").addClass("hidden");
                 $(".hamburger-menu-container").addClass("hidden");
                 $(".sub-modal-contaner").css({
-                    "width":""
+                    "min-width":""
                 })
             }
         
@@ -1199,6 +1214,7 @@ const swapData = [
                     "padding-left": "10px",
                     "gap": "30px"
                 });
+                
                 $(".health-analysis-vid-text").css({
                     "flex-direction": "column",
                     "align-items": "center"
@@ -1261,8 +1277,11 @@ const swapData = [
                     "font-size": "47px",
                     "line-height": "55px"
                 });
+                $(".cards").css({
+                    "min-width":"340px"
+                })
                 $(".doctor-container > :nth-child(2) ").css({"font-size":"47px"})
-                $(".slider-text > :nth-child(2)").css({ "text-align": "center" });
+                $(".slider-text > :nth-child(2) , .slider-text > :nth-child(1) ").css({ "text-align": "start" });
         
                 $(".mobile-muscle-mass-hide").addClass("hidden");
                 $(".mobile-muscle-mass-show").removeClass("hidden");
@@ -1291,6 +1310,9 @@ const swapData = [
                 $(".sub-modal-contaner").css({
                     "width":""
                 })
+                $(".cards").css({
+                   " min-width": "500px"
+                })
                 $(".doctor-container >  :nth-child(2) ").css({"font-size":""})
                 $(".button-slider-container").css({
                     "justify-content":""
@@ -1312,8 +1334,7 @@ const swapData = [
                     "font-size": "",
                     "line-height": ""
                 });
-                $(".slider-text > :nth-child(2)").css({ "text-align": "" });
-        
+                $(".slider-text > :nth-child(2) , .slider-text > :nth-child(1)").css({ "text-align": "center" });
                 $(".mobile-muscle-mass-hide").removeClass("hidden");
                 $(".mobile-muscle-mass-show").addClass("hidden");
             }
